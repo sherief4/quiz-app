@@ -1,0 +1,72 @@
+name: quiz_app
+description: "A new Flutter project."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path: any  
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  dio: ^5.8.0+1
+  retrofit: ^4.4.2
+  retrofit_generator: ^9.1.9
+  freezed: ^3.0.6
+  freezed_annotation: ^3.0.0
+  flutter_bloc: ^9.1.0
+  bloc: ^9.0.0
+  meta: ^1.16.0
+  intl: ^0.19.0
+  get_it: ^8.0.3
+  quick_log: ^5.5.3
+  flutter_secure_storage: ^9.2.4
+  cached_network_image: ^3.4.1
+  shimmer: ^3.0.0
+  flutter_screenutil: ^5.9.3
+  easy_localization: ^3.0.7+1
+  top_snackbar_flutter: ^3.2.0
+  path_provider: ^2.1.5
+  sqflite: ^2.4.2
+  uuid: ^4.5.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner:
+  flutter_launcher_icons: ^0.14.3
+  flutter_gen_runner: ^5.10.0
+
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/logo.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/icons/logo.png"
+  
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/icons/
+    - assets/translations/
+    - assets/fonts/
+    - assets/images/
+
+  fonts:
+    - family: Atma
+      fonts:
+        - asset: assets/fonts/Atma-Bold.ttf
+          weight: 800
+        - asset: assets/fonts/Atma-Medium.ttf
+          weight: 600
+        - asset: assets/fonts/Atma-Regular.ttf
+          weight: 500
