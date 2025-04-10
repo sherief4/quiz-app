@@ -30,7 +30,7 @@ void main() {
     runApp(
       EasyLocalization(
         supportedLocales: const [Locale('ar'), Locale('en')],
-        startLocale: const Locale('ar'),
+        startLocale: const Locale('en'),
         saveLocale: true,
         path: 'assets/translations',
         child: const QuizApp(),

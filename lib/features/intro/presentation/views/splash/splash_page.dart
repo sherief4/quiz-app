@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:quiz_app/core/router/routes.dart';
 import 'package:quiz_app/core/styles/colors_manager.dart';
-import 'package:quiz_app/core/widgets/image_widget.dart';
 import 'package:quiz_app/gen/assets.gen.dart';
 
 class SplashPage extends StatefulWidget {
@@ -15,24 +15,16 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    // _getData();
+    navigate();
   }
 
-  // Future<void> _getData() async {
-  //   await Utils.getCachedData();
-  //   Future.delayed(const Duration(seconds: 2), () {
-
-  //     // ignore: use_build_context_synchronously
-  //     Navigator.of(context).pushNamedAndRemoveUntil(
-  //       AppConstants.isFirstTime
-  //           ? Routes.introApp
-  //           : AppConstants.token.isNotEmpty
-  //               ? Routes.home
-  //               : Routes.login,
-  //       (route) => false,
-  //     );
-  //   });
-  // }
+  Future<void> navigate() async {
+    await Future.delayed(const Duration(seconds: 2), () {
+      if (mounted) {
+        Navigator.pushReplacementNamed(context, Routes.welcome);
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
