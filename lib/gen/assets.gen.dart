@@ -38,6 +38,13 @@ class $AssetsIconsGen {
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/avatar.png
+  AssetGenImage get avatar => const AssetGenImage('assets/images/avatar.png');
+
+  /// File path: assets/images/question.png
+  AssetGenImage get question =>
+      const AssetGenImage('assets/images/question.png');
+
   /// File path: assets/images/splash_logo.jpg
   AssetGenImage get splashLogo =>
       const AssetGenImage('assets/images/splash_logo.jpg');
@@ -52,10 +59,32 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
+    avatar,
+    question,
     splashLogo,
     startButton,
     welcomeMessageContainer,
   ];
+}
+
+class $AssetsSvgsGen {
+  const $AssetsSvgsGen();
+
+  /// File path: assets/svgs/chat.svg
+  String get chat => 'assets/svgs/chat.svg';
+
+  /// File path: assets/svgs/like.svg
+  String get like => 'assets/svgs/like.svg';
+
+  /// File path: assets/svgs/send.svg
+  String get send => 'assets/svgs/send.svg';
+
+
+  /// File path: assets/svgs/statistics.svg
+  String get statistics => 'assets/svgs/statistics.svg';
+
+  /// List of all assets
+  List<String> get values => [chat, like, send, statistics];
 }
 
 class $AssetsTranslationsGen {
@@ -80,6 +109,7 @@ class Assets {
   static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsSvgsGen svgs = $AssetsSvgsGen();
   static const $AssetsTranslationsGen translations = $AssetsTranslationsGen();
 }
 

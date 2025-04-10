@@ -14,7 +14,7 @@ class AppTheme {
     iconTheme: const IconThemeData(color: ColorsManager.primaryColor),
     primaryColor: ColorsManager.primaryColor,
     fontFamily: AppTheme.fontFamily,
-    scaffoldBackgroundColor: ColorsManager.shadowColor,
+    scaffoldBackgroundColor: ColorsManager.backgroundColor,
     textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
       overlayColor: WidgetStateProperty.all<Color>(Colors.transparent),
@@ -23,12 +23,12 @@ class AppTheme {
       centerTitle: true,
       actionsIconTheme: const IconThemeData(color: Colors.white),
       iconTheme: const IconThemeData(color: Colors.white),
-      elevation: 0,
-      backgroundColor: ColorsManager.primaryColor,
+      elevation: 20,
+      backgroundColor: ColorsManager.backgroundColor,
       titleTextStyle:
           TextStyles.s14_medium.copyWith(color: Colors.white),
       systemOverlayStyle: const SystemUiOverlayStyle(
-        statusBarColor: ColorsManager.primaryColor,
+        statusBarColor: ColorsManager.backgroundColor,
         statusBarBrightness: Brightness.dark,
         statusBarIconBrightness: Brightness.light,
       ),

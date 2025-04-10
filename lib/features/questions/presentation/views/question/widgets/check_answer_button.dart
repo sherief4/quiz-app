@@ -6,8 +6,8 @@ import 'package:quiz_app/core/styles/text_styles.dart';
 import 'package:quiz_app/gen/assets.gen.dart';
 import 'package:quiz_app/generated/locale_keys.g.dart';
 
-class LetsStartButton extends StatelessWidget {
-  const LetsStartButton({super.key});
+class CheckAnswerButton extends StatelessWidget {
+  const CheckAnswerButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class LetsStartButton extends StatelessWidget {
         ),
         alignment: Alignment.center,
         child: Text(
-          LocaleKeys.letsStart.tr(),
+          LocaleKeys.checkAnswer.tr(),
           style: TextStyles.s20_semiBold.copyWith(color: Colors.black),
         ),
       ),

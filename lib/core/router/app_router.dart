@@ -5,6 +5,7 @@ import 'package:quiz_app/core/router/routes.dart';
 import 'package:quiz_app/features/intro/presentation/cubit/intro_cubit.dart';
 import 'package:quiz_app/features/intro/presentation/views/splash/splash_page.dart';
 import 'package:quiz_app/features/intro/presentation/views/welcome/welcome_page.dart';
+import 'package:quiz_app/features/questions/presentation/views/question/question_page.dart';
 
 class AppRouter {
   static Route? generateRoute(RouteSettings settings) {
@@ -24,6 +25,11 @@ class AppRouter {
                 child: const WelcomePage(),
               ),
         );
+
+      //------------------------------------------------------------------------
+
+      case Routes.question:
+        return MaterialPageRoute(builder:  (_) => const QuestionPage());
 
       //------------------------------------------------------------------------
 
